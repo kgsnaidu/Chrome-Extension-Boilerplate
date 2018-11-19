@@ -1,0 +1,38 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "1.0.0",
+  "description": "Chrome extension boilerplate using webpack4, react16, react-md, iframe",
+  "private": true,
+  "repository": "https://github.com/naniaryan/Chrome-Extension-Boilerplate.git",
+  "author": "NaniAryan <naniaryan@github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "build-dev": "node_modules/.bin/webpack --config webpack.config.js -d -w"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-frame-component": "^4.0.2",
+    "react-md": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "svg-sprite-loader": "^4.1.3",
+    "svgo": "^1.1.1",
+    "svgo-loader": "^2.2.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

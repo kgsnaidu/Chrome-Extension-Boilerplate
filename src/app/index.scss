@@ -1,0 +1,13 @@
+@import 'node_modules/react-md/dist/react-md.amber-blue.min';
+
+html, body,
+.frame-root,
+.frame-content {
+    height: 100vh;
+    margin: 0;
+    background: none;
+}
+
+#app-main-container {
+    overflow: hidden;
+}

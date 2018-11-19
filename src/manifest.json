@@ -1,0 +1,28 @@
+{
+    "name": "Sample Extension",
+    "manifest_version": 2,
+    "description": "Just checking how it is going to work",
+    "version": "1.0.0",
+    "author": "NaniAryan <naniaryan@github.com>",
+
+    "browser_action": {
+
+    },
+
+    "background": {
+        "scripts": ["js/background.bundle.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["css/__outer.css"],
+            "js": ["js/__app.bundle.js"]
+        }
+    ],
+
+    "web_accessible_resources": ["css/__app.css", "assets/*"],
+    "permissions": ["activeTab", "tabs"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src 'self' data:"
+}

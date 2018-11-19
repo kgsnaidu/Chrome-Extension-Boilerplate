@@ -1,0 +1,16 @@
+#sample-extension-root {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+    background-color:rgba(0,0,0,.4);
+    overflow: hidden;
+}
+
+#sample-extension-root iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
